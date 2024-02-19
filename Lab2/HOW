@@ -1,0 +1,34 @@
+
+### 1. `Get()` Function:
+
+The `Get()` function retrieves the value associated with a key from the cache. Here's how it works:
+
+- It checks if the key exists in the cache map.
+- If the key exists, it retrieves the corresponding value from the cache map.
+- Then, it moves the key to the end of the queue, marking it as recently used.
+- Finally, it returns the value associated with the key and a potential error.
+
+### 2. `Put()` Function:
+
+The `Put()` function inserts or updates a key-value pair in the cache. Here's how it works:
+
+- It checks if the key already exists in the cache map.
+- If the key doesn't exist and the cache is full, it evicts the least recently used item.
+- If the key exists, it deletes the key from its current position in the queue.
+- Then, it adds the key-value pair to the cache map.
+- Finally, it appends the key to the end of the queue.
+- It decrements the remaining capacity of the cache if the key didn't exist before.
+
+### 3. `TestWriteWithEviction()` Function:
+
+The `TestWriteWithEviction()` function is a test case for the LRU cache implementation. Here's how it works:
+
+- It initializes a new LRU cache with a capacity of 3.
+- It adds four key-value pairs to the cache.
+- Since the cache capacity is 3, adding the fourth pair triggers the eviction of the least recently used key-value pair.
+- It attempts to retrieve the evicted key from the cache.
+- If the evicted key is still present in the cache after adding the fourth key-value pair, it indicates a failure of the LRU replacement policy.
+
+This test function ensures that the eviction and replacement policy of the LRU cache are functioning correctly.
+
+In summary, the `Get()` and `Put()` methods manage the cache's key-value pairs and the queue of keys, while the `TestWriteWithEviction()` function verifies the correctness of the LRU cache implementation by testing the eviction policy.
