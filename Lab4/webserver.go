@@ -102,7 +102,6 @@ func (db database) update(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	// Use a use a what?
 	// Use a Mutex to synchronize access to the db
 	var mutex = &sync.Mutex{}
 	mutex.Lock()
