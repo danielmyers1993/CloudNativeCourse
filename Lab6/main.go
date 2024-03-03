@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitlab.com/arunravindran/cloudnativecourse/lab6-external-rest-api/weather"
+	"github.com/danielmyers1993/CloudNativeCourse/Lab6/weather"
 )
 
 func main() {
