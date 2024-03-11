@@ -134,3 +134,4 @@ func RunCLI() {
 	}
 	//Extend values to print
     fmt.Printf("Summary: %s\nTemp: %.1fº\nPressure: %.0f hPa\nHumidity: %d%% \nWind Speed: %.1f m/s\n", conditions.Summary, conditions.Temperature.Fahrenheit(), conditions.Pressure, conditions.Humidity, conditions.WindSpeed)
+ }
