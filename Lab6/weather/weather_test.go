@@ -20,9 +20,9 @@ func TestParseResponse(t *testing.T) {
 	want := Conditions{
 		Summary:     "Clouds",
 		Temperature: 281.33,
-		Pressure:    1016.0, // Add pressure value from test data
-		Humidity:    80.0,    // Add humidity value from test data
-		WindSpeed:   4.0,     // Add wind speed value from test data
+		Pressure:    1000.0, // Add pressure value from test data
+		Humidity:    90.0,    // Add humidity value from test data
+		WindSpeed:   3.09,     // Add wind speed value from test data
 	}
 	got, err := ParseResponse(data)
 	if err != nil {
@@ -111,9 +111,9 @@ func TestGetWeather(t *testing.T) {
 	want := Conditions{
 		Summary:     "Clouds",
 		Temperature: 281.33,
-		Pressure:    1016.0, // Add pressure value from test data
-		Humidity:    80.0,    // Add humidity value from test data
-		WindSpeed:   4.0,     // Add wind speed value from test data
+		Pressure:    1000.0, // Add pressure value from test data
+		Humidity:    90.0,    // Add humidity value from test data
+		WindSpeed:   3.09,     // Add wind speed value from test data
 	}
 	got, err := c.GetWeather("Paris,FR")
 	if err != nil {
