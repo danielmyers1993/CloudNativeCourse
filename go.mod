@@ -1,4 +1,4 @@
-module github.com/danielmyers1993/CloudNativeCourse
+module github.com/danielmyers1993/CloudNativeCourse //updated file path
 
 go 1.21.6
 
