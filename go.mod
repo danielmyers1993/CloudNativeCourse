@@ -1,4 +1,4 @@
-module github.com/danielmyers1993/cloudnativecourse
+module github.com/danielmyers1993/CloudNativeCourse
 
 go 1.21.6
 
