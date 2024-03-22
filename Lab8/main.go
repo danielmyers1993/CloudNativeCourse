@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	mongodbEndpoint = "mongodb://172.17.0.3:27017" // Find this from the Mongo container
+	mongodbEndpoint = "mongodb://172.17.0.2" // Find this from the Mongo container
 )
 
 type Post struct {
