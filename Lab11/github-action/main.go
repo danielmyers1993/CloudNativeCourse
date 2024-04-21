@@ -2,7 +2,7 @@
 package main
 
 import (
-	"https://github.com/danielmyers1993/CloudNativeCourse/tree/main/Lab11/github-action/microservice"
+	"github.com/danielmyers1993/CloudNativeCourse"
 	"log"
 )
 
